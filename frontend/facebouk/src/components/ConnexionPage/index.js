@@ -12,10 +12,10 @@ const Connexion = () => {
                 <form>
                     <label className={styles.titre}>Connexion</label>
                 <input className={styles.inputConnexion} id="username" type="text" method="post" for="" placeholder="Identifiant ..."></input>
-                <label className={styles.MDP}>mdp</label>
+              
                 <input className={styles.inputConnexion} id="password" type="password" method="post" for="password" placeholder="Mot de passe ..."></input>
                 <div> 
-                    <span><Link to="/">Annuler</Link></span>
+                    <button><Link to="/">Annuler</Link></button>
                 </div>             
                 <div>
                     <button id="submit" type="submit">connecter</button>

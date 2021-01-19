@@ -12,6 +12,7 @@
 
 .logo{
     color: blue;
+    margin-top: 300px;
 }
 
 .containerBt{
@@ -23,5 +24,14 @@
 }
 
 .bt{
+    color:black;
     padding: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: 1px solid blue;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+.bt:hover{
+    color: red;
 }
