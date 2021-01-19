@@ -21,7 +21,7 @@ const config = { //configuration fetch
     },
     body: Formjson,// j'envoie dans le back body ==req.body
   } 
-  
+  console.log(user);  
 fetch(URL, config) //instancier la fetch
   .then(response =>  //après que la fetch est faite je fais :
     response.json())
