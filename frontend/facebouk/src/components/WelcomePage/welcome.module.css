@@ -1,0 +1,27 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap'); */
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* font-family: 'Almendra SC', serif; */
+} 
+
+.logo{
+    color: blue;
+}
+
+.containerBt{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.bt{
+    padding: 20px;
+}
