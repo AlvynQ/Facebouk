@@ -8,9 +8,9 @@ const ProfilPage = () => {
 useEffect(()=>{fetchprof()})
     return(
         <div className={styles.container}>
-        <p> Pseudo </p>
+        <p className={styles.titre}> Pseudo </p>
         <span id="username"></span>
-        <p> Email </p>
+        <p className={styles.titre}> Email </p>
         <span id="email"></span>
         </div>
     )
