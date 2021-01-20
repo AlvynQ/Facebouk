@@ -21,6 +21,7 @@ const Connexion = () => {
                     <button id="submit" type="submit">connecter</button>
                 </div>
                 </form>
+                <p id='error'></p>
             </div>
         </div>
     ) 
