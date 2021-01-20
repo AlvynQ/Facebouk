@@ -34,7 +34,7 @@ const fetchco = () => { //instancier le js en react
                     } else {
                         const token = json.accessToken;
                         sessionStorage.setItem("Token", json.accessToken)
-                        document.location.href = "/Profil"
+                        document.location.href = "/HomePage"
                     }
                 })
             })

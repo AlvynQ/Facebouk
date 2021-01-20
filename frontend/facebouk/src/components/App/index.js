@@ -4,6 +4,7 @@ import WelcomePage from '../WelcomePage';
 import Inscription from '../InscriptionPage';
 import Connexion from '../ConnexionPage';
 import Profil from '../ProfilPage';
+import HomePage from '../HomePage';
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/Inscription" component={Inscription} />
         <Route path="/Connexion" component={Connexion} />
         <Route path="/Profil" component={Profil} />
+        <Route path="/HomePage" component={HomePage} />
 
         </Switch>  
       </Router>
