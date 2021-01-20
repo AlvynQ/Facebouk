@@ -4,9 +4,7 @@ import styles from './inscription.module.css';
 import fetchinsc from './inscription';
 
 const Inscription = () => {                                                                                                             
-useEffect(()=>{
-    fetchinsc()
-})
+useEffect(()=>{fetchinsc()})
     return(
         <div className={styles.container}>
             <div> 

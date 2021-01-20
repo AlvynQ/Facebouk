@@ -11,7 +11,6 @@ const fetchinsc=()=>{ //instancier le js en react
 }
 
 const Formjson=JSON.stringify(user); // Transformation en String
-console.log(user);
 const config = { //configuration fetch
     method: 'POST', //envoyer
     headers: {  //autorisation
@@ -21,7 +20,6 @@ const config = { //configuration fetch
     },
     body: Formjson,// j'envoie dans le back body ==req.body
   } 
-  console.log(user);  
 fetch(URL, config) //instancier la fetch
   .then(response =>  //après que la fetch est faite je fais :
     response.json())

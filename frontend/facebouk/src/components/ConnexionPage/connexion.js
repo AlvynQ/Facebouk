@@ -1,3 +1,5 @@
+const URL="http://localhost:8081/auth/signin";  //url da la route de la requete en back
+
 const fetchco = () => { //instancier le js en react
     document.getElementById("submit").addEventListener('click', (e) => { //evenement au click sur le bouton 
         e.preventDefault();
@@ -5,9 +7,8 @@ const fetchco = () => { //instancier le js en react
             username: document.querySelector("#username").value, //email-> req.body.email
             password: document.querySelector("#password").value //attention a nommer comme en back
         }
-
         const Formjson = JSON.stringify(user); // Transformation en String
-console.log(user);
+        console.log(user);
         const config = { //configuration fetch
             method: 'POST', //envoyer
             headers: { //autorisation
@@ -21,7 +22,7 @@ console.log(user);
         fetch(URL, config) //instancier la fetch
             .then(response => { //après que la fetch est faite je fais :
                 response.json().then(json => { //transformation de la reponse en json
-
+                    console.log("yes");
                     if (json.message === "user not found") { //gestion erreur
                         console.log("user not found")
                         document.querySelector('#error').innerHTML = "Utilisateur non trouvé";
