@@ -21,12 +21,21 @@ const config = { //configuration fetch
     body: Formjson,// j'envoie dans le back body ==req.body
   } 
 fetch(URL, config) //instancier la fetch
-  .then(response =>  //après que la fetch est faite je fais :
-    response.json())
-    .then(data => {
-        console.log(data);  
-        document.location.href="/";
+    .then(response => { //après que la fetch est faite je fais :
+      response.json().then(json => { //transformation de la reponse en json
+          console.log("yes");
+          if (json.message === "erreur user deja enregistré !") { //gestion erreur
+              console.log("user not found")
+              document.querySelector('#error').innerHTML = "Utilisateur deja enregisté";
+          } else if (json.message === "erreur Email deja enregistré !") {
+              console.log("wrong password")
+              document.querySelector('#error').innerHTML = "Email deja enregistré";
+          } else if (json.message === undefined) {
+              console.log('pb')
+          } else {
+              document.location.href = "/"
+          }
   })})
-}
+})}
 
 export default fetchinsc;

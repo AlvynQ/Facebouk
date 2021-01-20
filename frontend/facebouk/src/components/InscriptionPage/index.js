@@ -5,6 +5,7 @@ import fetchinsc from './inscription';
 
 const Inscription = () => {                                                                                                             
 useEffect(()=>{fetchinsc()})
+
     return(
         <div className={styles.container}>
             <div> 
@@ -21,6 +22,7 @@ useEffect(()=>{fetchinsc()})
                             <button id="submit" type="submit">Je m'inscris</button>
                         </div>
                 </form>
+                <p id="error">ds</p>
             </div>
         </div>
     )

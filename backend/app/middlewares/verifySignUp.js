@@ -12,7 +12,7 @@ checkDuplicateUsernameOrEmail = (req, res, next) => {
     }
 
     if (user) {
-      res.status(400).send({ message: "erreur user deja enregistré !" });
+      res.json({ message: "erreur user deja enregistré !" });
       return;
     }
 
@@ -26,7 +26,7 @@ checkDuplicateUsernameOrEmail = (req, res, next) => {
       }
 
       if (user) {
-        res.status(400).send({ message: "erreur Email deja enregistré !" });
+        res.json({ message: "erreur Email deja enregistré !" });
         return;
       }
 

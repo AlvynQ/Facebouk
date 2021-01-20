@@ -29,7 +29,7 @@ const fetchco = () => { //instancier le js en react
                     } else if (json.message === "wrong password") {
                         console.log("wrong password")
                         document.querySelector('#error').innerHTML = "Mot de passe incorrect";
-                    } else if (json === undefined) {
+                    } else if (json.message === undefined) {
                         console.log('pb')
                     } else {
                         const token = json.accessToken;
