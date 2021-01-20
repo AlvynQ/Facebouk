@@ -5,7 +5,7 @@ import Inscription from '../InscriptionPage';
 import Connexion from '../ConnexionPage';
 import Profil from '../ProfilPage';
 import HomePage from '../HomePage';
-
+//blabla
 function App() {
     return (
       <Router> 
