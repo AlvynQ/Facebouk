@@ -2,10 +2,11 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styles from "./profil.module.css";
 import Header from '../Header';
-import fetchprof from "./profile"
+import fetchprof from "./profile";
+import fetchcursor from "./cursor";
 
 const ProfilPage = () => {
-useEffect(()=>{fetchprof()})
+useEffect(()=>{fetchprof(); fetchcursor();})
     return(
         <div> 
             <Header/>
@@ -14,8 +15,9 @@ useEffect(()=>{fetchprof()})
                          <span id="username"></span>
                              <p className={styles.titre}> Email </p>
                                  <span id="email"></span>
+                                 <div id="cursor" className={styles.cursor}></div>
                 </div>
-        </div>
+            </div>
     )
 }
 

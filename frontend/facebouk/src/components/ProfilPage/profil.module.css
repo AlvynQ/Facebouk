@@ -1,6 +1,19 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap'); */
+.cursor {
 
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    background-image: url(../../img/goat.png);
+    z-index: 2;
+}
 
+body {
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+
+ }
+ 
 .container{
     width: 100vw;
     height: 100vh;
