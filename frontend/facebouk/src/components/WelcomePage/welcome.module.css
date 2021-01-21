@@ -12,7 +12,9 @@
 
 .logo{
     color: blue;
+    font-size: 60px;
     margin-top: 300px;
+    border-bottom: 1px solid blue; 
 }
 
 .containerBt{
@@ -21,17 +23,89 @@
     justify-content: center;
     flex-direction: row;
     padding: 20px;
+    
+   
 }
 
 .bt{
-    color:black;
-    padding: 20px;
-    text-decoration: none;
-    text-transform: capitalize;
-    border: 1px solid blue;
     margin: 0 10px;
-    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    padding: 6px 15px;
+    text-decoration: none;
+    color:blue;
+    /* background-color: greenyellow; */
+    border: 1px solid blue;
+    text-transform:unset;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 1;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius:10px ;
 }
 .bt:hover{
-    color: red;
+   
+    border-bottom-left-radius: 10px;
+    border-top-right-radius:10px ;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius:0px ;
+}
+.bt::before
+{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 80px;
+    height: 100%;
+    background: linear-gradient(90deg,transparent, rgba(4, 86, 238, 0.8), transparent);
+    transform: skewX(25deg);
+    transition: 0s;
+}
+.bt:hover:before
+{
+  left: calc(100% + 100px);  
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+.bti{
+    margin: 0 10px;
+    position: relative;
+    display: inline-block;
+    padding: 6px 31px;
+    text-decoration: none;
+    color:blue;
+    /* background-color: greenyellow; */
+    border: 1px solid blue;
+    text-transform:unset;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 1;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius:10px ;
+}
+.bti:hover{
+    border-bottom-left-radius: 0px;
+    border-top-right-radius:0px ;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius:10px ;
+}
+.bti::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    right: -100px;
+    width: 80px;
+    height: 100%;
+    background: linear-gradient(90deg,transparent, rgba(4, 86, 238, 0.8), transparent);
+    transform: skewX(-25deg);
+    transition: 0s;
+}
+.bti:hover:before
+{
+  right: calc(100% + 100px);  
+  transition: 0.5s;
+  transition-delay: 0.2s;
 }

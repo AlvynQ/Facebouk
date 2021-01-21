@@ -10,7 +10,7 @@ const WelcomePage = () => {
         <h1 className={styles.logo}>Facebouk</h1>
             <div className={styles.containerBt}>
                 <Link className={styles.bt} to="/Connexion" >Se connecter</Link>
-                <Link className={styles.bt} to="/Inscription" >S'inscrire</Link>
+                <Link className={styles.bti} to="/Inscription" >S'inscrire</Link>
                     </div>
                 </div>
             // </div>

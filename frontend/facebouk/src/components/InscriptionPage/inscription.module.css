@@ -12,8 +12,8 @@ textarea:focus, input:focus{
 
 .form{
     border: 1px solid black;
-    height: 300px;
-    width: 400px;
+    height: 400px;
+    width: 600px;
     padding: 30px 30px 30px 10px;
     border-bottom-left-radius: 30px;
     border-top-right-radius: 30px;
@@ -22,7 +22,7 @@ textarea:focus, input:focus{
     background-size:contain;
     background-position: right;
     background-repeat: no-repeat;
-    background-color: rgb(206, 205, 205);
+    background-color: rgba(226, 222, 222, 0.644);
 }
 .form:hover{
     border-bottom-left-radius: 0px;
@@ -32,21 +32,21 @@ textarea:focus, input:focus{
 }
 .Name{
     color: black;
+    border-bottom: 1px solid black;
     font-size: 30px;
     font-family:  Roboto, sans-serif;
 }
 .login{
     display: flex;
     flex-direction: column;
-    margin: 30px 30px 30px 10px;
-    
+    margin: 30px 30px 30px 10px; 
 }
 .inputInscription{
     border: none;
     border-bottom: 1px solid blue;
     background-color: transparent;
     margin-bottom: 15px;
-    width: 300px;
+    width: 240px;
 }
 .inputInscription:invalid{
     border: 1px solid red;
@@ -60,7 +60,7 @@ textarea:focus, input:focus{
     border-bottom: 1px solid rgb(30, 255, 0);
 }
 .inputInscription::placeholder{
-    color: white;
+    color: black;
     text-shadow: black;
     text-align: left;
     font-style: italic;
@@ -83,7 +83,7 @@ textarea:focus, input:focus{
     display: inline-block;
     padding: 6px 15px;
     text-decoration: none;
-    
+
     color: green;
     background-color: greenyellow;
     text-transform:unset;
