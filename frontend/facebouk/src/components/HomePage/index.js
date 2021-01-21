@@ -9,14 +9,22 @@ import fetchhom from './homePage';
 const HomePage = () => {
     useEffect(()=>{ fetchhom ()})
     return(
-        <div> 
+        <div > 
             <Header/>
+                 <div className={styles.navs}>
+                     <div className={styles.btn}>
+                         <label for="site-search"></label>
+                            <input type="search"></input>
+                                <button className={styles.btnl} >chercher</button>
+                    </div>
+                        </div>
+                        <div className={styles.image} ></div>
             <div className={styles.container}>
-
                     <p className={styles.p}>Hello <span id="username"></span> !</p>
-                    <p className={styles.p}>Pour l'instant c'est vide ici.</p>
-                </div>
+
+                    <p className={styles.p}>cliquer sur le bouton profil !</p>
             </div>
+        </div>
     )
 }
 
