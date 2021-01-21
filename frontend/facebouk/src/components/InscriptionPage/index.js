@@ -2,9 +2,10 @@ import React,{useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import styles from './inscription.module.css';
 import fetchinsc from './inscription';
+import fetchannul from '../Annuler/annuler'
 
 const Inscription = () => {                                                                                                             
-useEffect(()=>{fetchinsc()})
+useEffect(()=>{fetchinsc(); fetchannul();})
 
     return(
         <div className={styles.container}>
@@ -16,13 +17,13 @@ useEffect(()=>{fetchinsc()})
                         <input className={styles.inputInscription} id="password" type="password" method="post" for="password" placeholder="Mot de passe ..."></input>
                         <input className={styles.inputInscription} type="password" method="post" for="password" placeholder="Confirmez le mot de passe ..."></input>     
                         <div> 
-                            <span><Link to="/">Annuler</Link></span>
+                        <button id="cancel">Annuler</button>
                         </div>             
                         <div>
                             <button id="submit" type="submit">Je m'inscris</button>
                         </div>
                 </form>
-                <p id="error">ds</p>
+                <p id="error"></p>
             </div>
         </div>
     )

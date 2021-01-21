@@ -2,10 +2,10 @@ import React,{useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import styles from './connexion.module.css';
 import fetchco from "./connexion"
-import fetchanul from './anuler';
+import fetchannul from '../Annuler/annuler';
 
 const Connexion = () => { 
-    useEffect(()=>{fetchco(); fetchanul();})                                                                                                            
+    useEffect(()=>{fetchco(); fetchannul();})                                                                                                            
     return(
         
         <div className={styles.container}>
@@ -18,7 +18,7 @@ const Connexion = () => {
 
                 <div className={styles.btn}>
                     <button className={styles.co} id="submit" type="submit">connecter</button>
-                    <button className={styles.deada} id="cancel"> Annuler</button>
+                    <button className={styles.deada} id="cancel">Annuler</button>
                 </div>
                 </form>
 

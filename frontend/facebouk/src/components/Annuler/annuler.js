@@ -1,4 +1,4 @@
-const fetchanul = () => {
+const fetchannul = () => {
 
 
     document.getElementById("cancel").addEventListener('click', (e) => { //evenement au click sur le bouton 
@@ -7,4 +7,4 @@ const fetchanul = () => {
     }
     )}
 
-export default fetchanul;
+export default fetchannul;
