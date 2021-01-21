@@ -9,9 +9,10 @@
 
 .img{
     position: absolute;
- width: 500px;
- height: 500px;
- z-index: -1;
+    width: 500px;
+    height: 500px;
+    z-index: -1;
+    margin-right: 220px;
 }
 
 .inputConnexion{
@@ -51,7 +52,9 @@ textarea:focus, input:focus{
 
 }
 .co{
+    color: white;
     background-color: rgb(8, 199, 8);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
     border-style: none;
     margin-bottom: 10px;
     text-transform: capitalize;
@@ -78,8 +81,9 @@ input:focus{
 
 .deada{
     background-color: rgb(197, 42, 42);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
     border-style: none;
-    color: black;
+    color: white;
     width: 45%;
     margin: 5px auto;
     padding: 5px;
@@ -100,7 +104,6 @@ input:focus{
     background-color: rgba(226, 222, 222, 0.644);
     border: 1px solid black;
     border-radius: 5px;
-    margin-left: 220px;
 }
 
 body{

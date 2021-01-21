@@ -12,12 +12,12 @@ useEffect(()=>{fetchinsc(); fetchannul();})
             <div className={styles.container}>
                 <div className={styles.image}> 
                 <form className={styles.form}>
-                    <label className={styles.Name} >Inscription</label>
+                    <label className={styles.titre} >Inscription</label>
                     <div className={styles.login}>
-                        <input className={styles.inputInscription} id="username" type="text"  method="post" for="" placeholder="Identifiant ..."></input>
+                        <input className={styles.inputInscription} minlength="3" id="username" type="text"  method="post" for="" placeholder="Identifiant ..."></input>
                         <input className={styles.inputInscription} id="email" type="email" method="post" for="email" placeholder="Adresse mail ..."></input>
-                        <input className={styles.inputInscription} id="password" type="password" method="post" for="password" placeholder="Mot de passe ..."></input>
-                        <input className={styles.inputInscription} type="password" method="post" for="password" placeholder="Confirmez le mot de passe ..."></input>  
+                        <input className={styles.inputInscription} minlength="6" id="password" type="password" method="post" for="password" placeholder="Mot de passe ..."></input>
+                        <input className={styles.inputInscription} minlength="6" type="password" method="post" for="password" placeholder="Confirmez le mot de passe ..."></input>  
                     </div>            
                 </form>
                 <div className={styles.btn}> 
