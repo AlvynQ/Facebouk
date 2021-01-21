@@ -30,7 +30,7 @@ fetch(URL, config) //instancier la fetch
           } else if (json.message === "erreur Email deja enregistré !") {
               console.log("wrong password")
               document.querySelector('#error').innerHTML = "Email deja enregistré";
-          } else if (json.message === undefined) {
+          } else if (json === undefined) {
               console.log('pb')
           } else {
               document.location.href = "/"

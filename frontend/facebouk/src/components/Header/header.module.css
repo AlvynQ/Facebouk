@@ -16,6 +16,7 @@ h1{
     color:white;
     text-decoration: none;
     cursor: pointer;
+    outline: none;
 }
 
 .navbar li{
@@ -24,4 +25,7 @@ h1{
 
 .btn{
     text-decoration: none;
+}
+textarea:focus, input:focus{
+    outline: none;
 }

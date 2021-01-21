@@ -1,6 +1,7 @@
 const URL="http://localhost:8081/auth/signin";  //url da la route de la requete en back
 
 const fetchco = () => { //instancier le js en react
+    
     document.getElementById("submit").addEventListener('click', (e) => { //evenement au click sur le bouton 
         e.preventDefault();
         const user = { // creation d un objet avec mes données a envoyer
@@ -29,7 +30,7 @@ const fetchco = () => { //instancier le js en react
                     } else if (json.message === "wrong password") {
                         console.log("wrong password")
                         document.querySelector('#error').innerHTML = "Mot de passe incorrect";
-                    } else if (json.message === undefined) {
+                    } else if (json === undefined) {
                         console.log('pb')
                     } else {
                         const token = json.accessToken;
