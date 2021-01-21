@@ -4,10 +4,7 @@
     display: flex;
     justify-content:space-around;
     align-items: center; 
-    /* background-image: url(../../img/bouc.jpg);
-    background-repeat:no-repeat;
-    background-position: center;
-    background-size: auto; */
+    
 } 
 
 .img{
