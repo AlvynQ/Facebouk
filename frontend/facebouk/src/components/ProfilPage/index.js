@@ -8,13 +8,13 @@ const ProfilPage = () => {
 useEffect(()=>{fetchprof()})
     return(
         <div> 
-        <Header/>
-        <div className={styles.container}>
-        <p className={styles.titre}> Pseudo </p>
-        <span id="username"></span>
-        <p className={styles.titre}> Email </p>
-        <span id="email"></span>
-        </div>
+            <Header/>
+                <div className={styles.container}>
+                     <p className={styles.titre}> Pseudo </p>
+                         <span id="username"></span>
+                             <p className={styles.titre}> Email </p>
+                                 <span id="email"></span>
+                </div>
         </div>
     )
 }
